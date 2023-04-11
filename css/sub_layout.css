@@ -28,26 +28,95 @@ html{
     left: 0;
     width: 100%;
     height: 100px;
-    background-color:rgba(255, 255, 255, 0.719);
-    text-align: center;
-}
-
-header #logo{
-    display: inline-block; 
+    background-color:rgba(255, 255, 255, 0.459);
     
 }
 
-#logo a{
-    display: block;
-}
 
 header #logo img{
     width: 90px;
     height: 90px;
     padding-top: 5px;
+    float: left;
 
 }
-#nav_toggle{
+
+#main_nav{
+    height:50px;
+    
+    color:black;
+    
+    margin:0 auto;
+    text-align: center;
+    width:1000px;
+    
+    
+}
+
+#main_nav > ul > li {
+    float:left;
+    width:200px;
+    position:relative;
+    margin-top: 50px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    
+}
+
+#main_nav > ul > li > ul {
+    width:130px;
+    display:none;
+    position: absolute;
+    font-size:14px;
+   
+   
+}
+
+#main_nav > ul > li > ul > li{
+    padding: 10px 0;
+    font-size: 1rem;
+    font-family: 'Jost',sans-serif;
+    font-weight: 500;
+}
+
+#main_nav > ul > li:hover > ul {
+    display:block;
+    margin-left: 35px;
+    padding-top: 20px;
+    
+}
+
+#main_nav > ul > li > ul > li:hover {
+    background: #739F48;
+    transition: ease 1s;
+    
+    }
+
+ 
+
+
+    #right_top{
+        float: right;
+        display: flex;
+        font-size: 0.8rem;
+        font-family: 'Jost', sans-serif;
+        margin-top: 5px;
+        font-weight: 600;
+        
+    }
+
+#right_top li a:hover{
+    color: #739F48;
+   
+    
+}
+
+#right_top li:nth-child(2), #right_top li:nth-child(3) {
+    padding-left: 40px;
+   
+}
+/* #nav_toggle{
     width:40px;
     height: 40px;
     float: right;
@@ -104,7 +173,7 @@ header #logo img{
 #main_nav .close img{
     width: 50px;
     height: 50px;
-}
+} */
 
 
 

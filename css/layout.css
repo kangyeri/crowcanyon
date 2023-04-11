@@ -28,27 +28,102 @@ html{
     left: 0;
     width: 100%;
     height: 100px;
-    background-color:rgba(255, 255, 255, 0.719);
-    text-align: center;
-}
-
-header #logo{
-    display: inline-block; 
+    background-color:rgba(255, 255, 255, 0.459);
     
 }
 
-#logo a{
-    display: block;
-    
-}
 
 header #logo img{
     width: 90px;
     height: 90px;
     padding-top: 5px;
+    float: left;
 
 }
-#nav_toggle{
+
+#main_nav{
+    height:50px;
+    
+    color:black;
+    
+    margin:0 auto;
+    text-align: center;
+    width:1000px;
+    
+    
+}
+
+#main_nav > ul > li {
+    float:left;
+    width:200px;
+    position:relative;
+    margin-top: 50px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    
+}
+
+#main_nav > ul > li > ul {
+    width:130px;
+    display:none;
+    position: absolute;
+    font-size:14px;
+   
+   
+}
+
+#main_nav > ul > li > ul > li{
+    padding: 10px 0;
+    font-size: 1rem;
+    font-family: 'Jost',sans-serif;
+    font-weight: 500;
+}
+
+#main_nav > ul > li:hover > ul {
+    display:block;
+    margin-left: 35px;
+    padding-top: 20px;
+    
+}
+
+#main_nav > ul > li > ul > li:hover {
+    background: #739F48;
+    transition: ease 1s;
+    
+    }
+
+ 
+
+
+#right_top{
+    float: right;
+    display: flex;
+    font-size: 0.8rem;
+    font-family: 'Jost', sans-serif;
+    margin-top: 5px;
+    font-weight: 600;
+    
+}
+
+#right_top li a:hover{
+    color: #739F48;
+   
+    
+}
+
+#right_top li:nth-child(2), #right_top li:nth-child(3) {
+    padding-left: 40px;
+   
+}
+
+#main_nav #point{
+    background: rgba(255, 255, 0, 0.24);
+}
+#main_nav #point a{
+   color: green;
+}
+/* #nav_toggle{
     width:40px;
     height: 40px;
     float: right;
@@ -105,7 +180,7 @@ header #logo img{
 #main_nav .close img{
     width: 50px;
     height: 50px;
-}
+} */
 
 
 /* main */
@@ -154,6 +229,12 @@ main #sec2 img{
 
 .on_view .con{
     
+    width:50%;
+    height: 500px;
+    background-image: url(../img/main_banner2.png);
+    background-size: cover;
+    background-position: center center;
+    flex-shrink: 0;
     position: relative;
 }
 
@@ -239,6 +320,10 @@ main #bar{
     left: 0;
 }
 
+#sec5 #web_best:hover{
+    cursor: url(../img/click.png) 2 2,  pointer;
+}
+
     
       
 
@@ -305,6 +390,10 @@ footer #contect #day{
     #sec5 #mob_best{
         display: none;
     }
+
+    #nav_toggle{
+        display: none;
+    }
 }
 /* 700이하 미디어쿼리 모바일 */
 @media all and (max-width:500px){
@@ -317,6 +406,31 @@ footer #contect #day{
     }
 
     #nav_toggle{
+       cursor: pointer;
+       
+
+    }
+    #nav_toggle span{
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin-bottom: 10px;
+        margin-left: 400px;
+       
+
+       
+    }
+
+ 
+    #main_nav ul, #right_top{
+        display: none;
+    }
+
+ 
+
+    
+    /* #nav_toggle{
         width: 20px;
         height: 15px;
         margin-top: 30px;
@@ -329,7 +443,7 @@ footer #contect #day{
 
     #main_nav ul{
         width:100%;
-    }
+    } */
 
     
 
@@ -346,7 +460,7 @@ footer #contect #day{
         left: 0;
         width: 100%;
         height: 80px;
-        background-color:rgba(225,225,225, 0.9);
+        background-color:rgba(225,225,225, 0.459);
         text-align: center;
     }
 
@@ -414,6 +528,7 @@ footer #contect #day{
         height: 40px;
     }
 
+   
 
 
     footer #contect{
