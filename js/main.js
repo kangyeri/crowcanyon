@@ -1,21 +1,4 @@
-   // main_nav control
-//    $('#main_nav ul').css({
-//     right:-$('#main_nav ul').width()
-// });
-// $('#main_nav').hide();
-// $('#nav_toggle').click(function(){
-//     $('#main_nav').fadeIn(500);
-//     $('#main_nav ul').animate({
-//         right:0
-//     },500);
-// });
-// $('#main_nav .close').click(function(){
-//     $('#main_nav').fadeOut(500);
-//     $('#main_nav ul').animate({
-//         right:-$('#main_nav ul').width()
-//     },500);
-// });
-//---- main_nav control 끝
+
 
 //scroll시 내용 에니메이션
 $('.img, .con').css({
@@ -84,9 +67,34 @@ $( document ).ready( function() {
 					
 				]
 
-      });
-	
-  } );
+    });
+
+
+       // main_nav control
+        // $('#main_nav ul').css({
+        //     right:-$('#main_nav ul').width()
+        // });
+
+        $('#nav_toggle').click(function(){
+            $('#main_nav').fadeIn(500);
+            $('#main_nav ul').animate({
+                right:0
+            },500);
+            $('#nav_toggle').fadeOut();
+            $('.close').fadeIn(500);
+        });
+        $('.close').click(function(){
+            $('#main_nav').fadeOut(500);
+            $('#main_nav ul').animate({
+                right:-$('#main_nav ul').width()
+            },500);
+            $('.close').fadeOut();
+            $('#nav_toggle').fadeIn(500);
+        });
+        // main_nav control 끝
+
+
+} ); //제이쿼리 끝
 
 
 
